@@ -1,0 +1,104 @@
+=============================================================================
+=============================================================================
+
+        DisplayLink macOS Application Release Note
+
+Version: v1.6.0
+Build: posix/59-3210-g8fbef5cd113 (128)
+
+Date: 13th December 2021
+
+=============================================================================
+=============================================================================
+
+
+A. Introduction
+===============
+
+This is DisplayLink Manager macOS app v1.6.0 release.
+Details about this app can be found in our FAQ: https://support.displaylink.com/knowledgebase/articles/1932214
+This version supports macOS versions 11.x and 12.x. See section D for details. 
+
+A full list of known issues can be found in the "Known issues and limitations" section below.
+
+B. Contents
+===========
+
+A.  Introduction
+B.  Contents
+C.  Changes in this release
+D.  Supported operating systems
+E.  Language support
+F.  Supported hardware
+G.  Operating system limitations
+H.  Known issues and limitations
+
+C. Changes in this release
+=============================
+
+C.2 Changes in 1.6.0 release
+----------------------------
+- Enabling display rotation via DisplayLink Manager user interface on Apple M1 computers running macOS Monterey 12
+- DL-41xx: improved firmware flashing time, visible from following update onwards
+- DL-6xxx: adding RTL8211FD-VX and RTL8211E Ethernet PHYs (WS1597)
+- Since 1.6 Beta with Apple M1, improved handling rotation of monitors with identical serial number and name (PS1447)
+- Since 1.6 Beta with Apple M1, improved red monitor outline behaviour (PS1438)
+
+
+C.1 Changes in 1.5.0 release
+----------------------------
+- Introducing additional inferred resolutions on 4K monitors: 2560x1440 and 3008x1692 on Intel based Macs
+- Beta: Apple Watch unlock when resuming displays from sleep (33190)
+- Fixed monitors power save mode issue on macOS Monterey 12 beta (33198)
+- Improved memory management on rotated screen (33179)
+- Improved rotated monitor performance on dual GPU machines (33072)
+- DL-41xx: improved firmware flashing experience which could hang in some products (33060)
+- Fixed app crashes at startup (33222)
+
+D. Supported operating systems
+==============================
+
+The DisplayLink macOS application can be installed on Apple Mac computers running OS version:
+ - macOS Big Sur 11
+ - macOS Monterey 12
+
+Older versions of our drivers are available from our website:
+https://www.synaptics.com/products/displaylink-graphics/downloads/macos
+
+
+E. Language support
+===================
+
+The DisplayLink macOS application is only available in English.
+
+
+F. Supported hardware
+=====================
+
+DisplayLink IC series supported:
+- DL-6xxx
+- DL-5xxx
+- DL-41xx
+- DL-3xxx
+- DL-1x5
+
+
+G. Operating system limitations
+================================
+
+Protected content from iTunes and other players is not visible on built-in graphics when DisplayLink screens are connected. (17087)
+
+The list of available resolutions and the default resolution for 4K displays depends on the type of connection (HDMI or DisplayPort). To see a more complete list of resolutions follow these steps:
+- Open the Displays preference in System Preferences
+- Go to the preferences panel for the DisplayLink screen
+- While keeping the option (alt) key pressed, select the "Scaled" option for the list of resolutions.
+
+Manual Ethernet speed setting is not retained across reboots. (20973)
+
+
+H. Known issues and limitations
+===============================
+
+- An updated list of troubleshooting suggestions is available at http://support.displaylink.com/knowledgebase/topics/80209
+- It is not possible to unlock the MacBook via Apple Watch when screen saver is running/enabled
+- Some resolutions, especially HiDPI/ Retina ones, may be missing on Apple M1 based Macs (29526)

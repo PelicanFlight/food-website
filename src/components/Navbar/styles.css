@@ -1,0 +1,32 @@
+.navlinks {
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    padding:0px 5px;
+    margin: 0px 15px;
+    text-transform: Capitalize;
+    color: #ECA915;
+    position: relative;
+
+    
+}
+.navlinks:hover {
+    color: #ECA915;
+}
+
+.navlinks:after {
+    content: "";
+    position: absolute;
+transition: 0.3s all ease-in-out;
+   background-color: #ECA915;
+   width: 0;
+   height: 3px;
+   left: 0;
+   bottom: -8px;
+
+}
+
+.navlinks:hover:after {
+width: 100%;
+color: grey;
+}
